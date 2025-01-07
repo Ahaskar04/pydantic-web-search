@@ -45,32 +45,6 @@ python web_search_agent.py
 
 The script determines whether to use OpenAI or Ollama based on the `LLM_MODEL` environment variable (whether it starts with 'gpt' or not).
 
-### Streamlit Interface
-
-The Streamlit version is created to provide a UI with text streaming from the LLM and chat history. Text streaming doesn't work with Ollama, so this Streamlit example will just use GPT. Make sure your have your OpenAI API key set. This can also be adjusted to use standard non-streaming like `web_search_agent.py` if you want to use Ollama.
-
-1. Set your OpenAI API key in the `.env` file.
-2. Start the Streamlit app:
-```bash
-streamlit run streamlit_ui.py
-```
-3. The Streamlit app will open in your browser.
-
-## Configuration
-
-### LLM Models
-
-You can choose between different LLM models by setting the `LLM_MODEL` environment variable:
-
-- For OpenAI GPT (example model, this can be any OpenAI model):
-  ```env
-  LLM_MODEL=gpt-4o
-  ```
-
-- For Ollama (example model, this can be any Ollama model you have downloaded):
-  ```env
-  LLM_MODEL=qwen2.5:32b
-  ```
 
 ### API Keys
 
